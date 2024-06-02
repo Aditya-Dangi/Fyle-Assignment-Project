@@ -149,7 +149,7 @@ button {
   }
   .first-page{
     height: 100%;
-    margin-bottom: 10em;
+    margin-bottom: 4em;
   }
 }
 
@@ -283,7 +283,7 @@ button {
     padding: 10px 0;
   }
   .swiper-container{
-    max-height: 450px;
+    max-height: 400px;
   }
   .second-page{
     height: 110vh;
