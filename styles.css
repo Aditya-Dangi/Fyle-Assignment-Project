@@ -37,6 +37,9 @@ button {
   font-weight: 500;
   font-style: normal;
 }
+.first-page{
+  margin-bottom: 8em;
+}
 .first-page, .second-page {
   height: 100vh; 
   display: flex;
