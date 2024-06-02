@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>jQuery</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+SC:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9.3.0/swiper-bundle.min.css">
+</head>
+<body>
+  
+  <section class="first-page">
+    <div class="container">
+      <div class="left-container">
+        <h3>Award Winning</h3>
+        <h1>Digital Marketing Agency</h1>
+        <p>Morbi sed lacus nec risus finibus feugiat et fermentum nibh. Pellentesque vitae ante at elit fringilla ac at purus, Morbi sed lacus nec risus finibus feugiat et fermentum</p>
+        <button>CONTACT US</button>
+      </div>
+      <div class="right-container">
+        <img src="./image/hero.png" alt="Hero-Img">
+      </div>
+    </div>
+    <div class="popup-form" id="popupForm">
+      <div class="popup-content">
+        <form action="https://getform.io/f/zazkjvzb" method="POST">
+          <h2>Talk To Us</h2>
+          <div class="work-email">
+            <input type="email" id="email" name="email" required placeholder="Work email*" autocomplete="email">
+          </div>
+          <div class="form-name">
+            <input type="text" id="fname" name="fname" required placeholder="First name*" autocomplete="given-name">
+            <input type="text" id="lname" name="lname" required placeholder="Last name*" autocomplete="family-name">
+          </div>
+          <div class="checkbox-content">
+            <input type="checkbox" id="terms" name="terms" required>
+            <label for="terms">I agree to Fyle's terms and conditions, and provide consent to send me communication.</label>
+          </div>
+          <div class="form-button">
+            <button type="submit">Submit</button>
+            <button type="button" class="close-btn" id="closeBtn">
+              Close
+            </button>
+          </div>
+        </form>        
+      </div>
+    </div>
+  </section>
+  
+
+
+  <section class="second-page">
+    <div class="service">
+      <div class="service-heading">
+        <div class="service-left">
+          <h3>What we do</h3>
+          <h1>Services Provide For You</h1>
+        </div>
+        <div class="service-right">
+          <p>Morbi sed lacus nec risus finibus feugiat et fermentum nibh. Pellentesque vitae ante at elit fringilla ac at purus, Morbi sed lacus nec risus finibus feugiat et fermentum</p>
+        </div>
+      </div>
+      <div class="slider">
+        <div class="swiper-container slide-content">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="slide-content-wrapper">
+                <img src="./image/1.png" alt="1st Image" class="slider-img">
+                <div class="slide-overlay">
+                  <div class="overlay-text">
+                    <img src="./image/icons/icon.png" alt="Icon">
+                    <span>WEB DEVELOPMENT</span>
+                    <p>Morbi sed lacus nec risus finibus feugiat et fermentum nibh. Pellentesque</p>
+                    <a href="https://www.fylehq.com" target="_blank"><button class="read-more-btn">READ MORE <span>&rarr;</span></button></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="slide-content-wrapper">
+                <img src="./image/2.png" alt="2nd Image" class="slider-img">
+                <div class="slide-overlay">
+                  <div class="overlay-text">
+                    <img src="./image/icons/icon.png" alt="Icon">
+                    <span>WEB DEVELOPMENT</span>
+                    <p>Morbi sed lacus nec risus finibus feugiat et fermentum nibh. Pellentesque</p>
+                    <a href="https://www.fylehq.com" target="_blank"><button class="read-more-btn">READ MORE <span>&rarr;</span></button></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="slide-content-wrapper">
+                <img src="./image/3.png" alt="3rd Image" class="slider-img">
+                <div class="slide-overlay">
+                  <div class="overlay-text">
+                    <img src="./image/icons/icon.png" alt="Icon">
+                    <span>WEB DEVELOPMENT</span>
+                    <p>Morbi sed lacus nec risus finibus feugiat et fermentum nibh. Pellentesque</p>
+                    <a href="https://www.fylehq.com" target="_blank"><button class="read-more-btn">READ MORE <span>&rarr;</span></button></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="slide-content-wrapper">
+                <img src="./image/2.png" alt="4th Image" class="slider-img">
+                <div class="slide-overlay">
+                  <div class="overlay-text">
+                    <img src="./image/icons/icon.png" alt="Icon">
+                    <span>WEB DEVELOPMENT</span>
+                    <p>Morbi sed lacus nec risus finibus feugiat et fermentum nibh. Pellentesque</p>
+                    <a href="https://www.fylehq.com" target="_blank"><button class="read-more-btn">READ MORE <span>&rarr;</span></button></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="slide-content-wrapper">
+                <img src="./image/1.png" alt="5th Image" class="slider-img">
+                <div class="slide-overlay">
+                  <div class="overlay-text">
+                    <img src="./image/icons/icon.png" alt="Icon">
+                    <span>WEB DEVELOPMENT</span>
+                    <p>Morbi sed lacus nec risus finibus feugiat et fermentum nibh. Pellentesque</p>
+                    <a href="https://www.fylehq.com" target="_blank"><button class="read-more-btn">READ MORE <span>&rarr;</span></button></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="slide-content-wrapper">
+                <img src="https://picsum.photos/200/300" alt="6th Image" class="slider-img">
+                <div class="slide-overlay">
+                  <div class="overlay-text">
+                    <img src="./image/icons/icon.png" alt="Icon">
+                    <span>WEB DEVELOPMENT</span>
+                    <p>Morbi sed lacus nec risus finibus feugiat et fermentum nibh. Pellentesque</p>
+                    <a href="https://www.fylehq.com" target="_blank"><button class="read-more-btn">READ MORE <span>&rarr;</span></button></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="slide-content-wrapper">
+                <img src="./image/3.png" alt="7th Image" class="slider-img">
+                <div class="slide-overlay">
+                  <div class="overlay-text">
+                    <img src="./image/icons/icon.png" alt="Icon">
+                    <span>WEB DEVELOPMENT</span>
+                    <p>Morbi sed lacus nec risus finibus feugiat et fermentum nibh. Pellentesque</p>
+                    <a href="https://www.fylehq.com" target="_blank"><button class="read-more-btn">READ MORE <span>&rarr;</span></button></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="slide-content-wrapper">
+                <img src="./image/1.png" alt="8th Image" class="slider-img">
+                <div class="slide-overlay">
+                  <div class="overlay-text">
+                    <img src="./image/icons/icon.png" alt="Icon">
+                    <span>WEB DEVELOPMENT</span>
+                    <p>Morbi sed lacus nec risus finibus feugiat et fermentum nibh. Pellentesque</p>
+                    <a href="https://www.fylehq.com" target="_blank"><button class="read-more-btn">READ MORE <span>&rarr;</span></button></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="slide-content-wrapper">
+                <img src="https://picsum.photos/200/300" alt="9th Image" class="slider-img">
+                <div class="slide-overlay">
+                  <div class="overlay-text">
+                    <img src="./image/icons/icon.png" alt="Icon">
+                    <span>WEB DEVELOPMENT</span>
+                    <p>Morbi sed lacus nec risus finibus feugiat et fermentum nibh. Pellentesque</p>
+                    <a href="https://www.fylehq.com" target="_blank"><button class="read-more-btn">READ MORE <span>&rarr;</span></button></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <section class="container-2">
+    <div class="container-2-body">
+      <h3>Why Choose Us</h3>
+      <h1>Why We Are Best</h1>
+      <div class="qualities">
+        <div class="card">
+          <img src="./image/icons/1.png" alt="" class="quality-icon">
+          <h5>Clarified Vision & Target</h5>
+          <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy.</p>
+        </div>
+        <div class="card">
+          <img src="./image/icons/2.png" alt="" class="quality-icon">
+          <h5>High Performance</h5>
+          <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy.</p>
+        </div>
+        <div class="card">
+          <img src="./image/icons/3.png" alt="" class="quality-icon">
+          <h5>Maintain Security</h5>
+          <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy.</p>
+        </div>
+        <div class="card">
+          <img src="./image/icons/4.png" alt="" class="quality-icon">
+          <h5>Better Strategy & Quality</h5>
+          <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <section class="container-3">
+    <h3>Our Project</h3>
+    <h1>Why we are best</h1>  
+    <div class="container-3-body">
+      <div class="container-3-left">
+        <img src="./image/image2.jpg" alt="Image Template 1" class="template-img" >
+        <img src="./image/image.png" alt="Image Template 2" class="template-img template-img-1">
+        <img src="./image/image3.webp" alt="Image Template 3" class="template-img template-img-1">
+      </div>
+      <div class="container-3-right">
+        <div class="template" data-image="1">
+          <h5>Genderless Kei - Japan's Hot</h5>
+          <p>Set to launch on the manufacturer's new A330neo aircraft in 2017, it's offering lots of</p>
+        </div>
+        <div class="template" data-image="2">
+          <h5>Better Strategy & Quality</h5>
+          <p>Set to launch on the manufacturer's new A330neo aircraft in 2017, it's offering lots of</p>
+        </div>
+        <div class="template" data-image="3">
+          <h5>Genderless Kei - Japan's Hot</h5>
+          <p>Set to launch on the manufacturer's new A330neo aircraft in 2017, it's offering lots of</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+
+  <section class="container-4">
+    <div class="container-4-body">
+      <h3>Experts Growth</h3>
+      <h1>Our company growth</h1>
+      <div class="review">
+        <div class="review-card">
+          <img src="./icons/heart (2).png" alt="Icon Image" class="review-icons">
+          <p class="icons-count">199 +</p>
+          <p>Staticfied Customers</p>
+        </div>
+        <div class="review-card">
+          <img src="./icons/clock (3).png" alt="Icon Image" class="review-icons">
+          <p class="icons-count">1591+</p>
+          <p>Days Of Operation</p>
+        </div>
+        <div class="review-card">
+          <img src="./icons/Path 4402.png" alt="Icon Image" class="review-icons">
+          <p class="icons-count">283 +</p>
+          <p>Complete Project</p>
+        </div>
+        <div class="review-card">
+          <img src="./icons/Path 4406.png" alt="Icon Image" class="review-icons">
+          <p class="icons-count">75+</p>
+          <p>Win Awards</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="container-5">
+    <div class="container-5-body">
+      <h3>client's feedback</h3>
+      <h1>people say's about us !</h1>
+      <div>
+        <p>Jannat Tumpa The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections Bonorum et Malorum original.</p>
+        <span><img src="./image/Quotemarks-left.png" alt="Watermark Icon" class="watermark-icon"></span>
+        <span class="span1">JANNAT TUMPA</span>
+        <span class="span2">- COO, AMERIMAR ENTERPRISES, INC.</span>
+      </div>      
+    </div>
+  </section>
+
+  <footer class="container-6">
+    <img src="./image/Group 500.png" alt="Footer Img">
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9.3.0/swiper-bundle.min.js"></script>
+  <script src="index.js"></script>
+</body>
+</html>
