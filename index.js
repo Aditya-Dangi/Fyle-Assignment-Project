@@ -37,12 +37,18 @@ $(document).ready(function() {
 
 
 
-$('button').on('click', function() {
-  $('#popupForm').css('display', 'flex');
+$('button').not('.nav-toggle').on('click', function() {
+  $('#popupForm').addClass('active');
 });
 
 $('#closeBtn').on('click', function() {
-  $('#popupForm').css('display', 'none');
+  $('#popupForm').removeClass('active');
+});
+
+$('#popupForm').on('click', function(e) {
+  if (e.target === this) {
+    $(this).removeClass('active');
+  }
 });
 
 $(document).ready(function() {
@@ -57,3 +63,49 @@ $(document).ready(function() {
     }
   });
 });
+
+// Sticky nav background + mobile toggle
+$(document).ready(function() {
+  const $nav = $('#siteNav');
+  const $navToggle = $('#navToggle');
+  const $navLinks = $('#navLinks');
+
+  function updateNavBackground() {
+    $nav.toggleClass('scrolled', $(window).scrollTop() > 30);
+  }
+  updateNavBackground();
+  $(window).on('scroll', updateNavBackground);
+
+  $navToggle.on('click', function() {
+    const isOpen = $navLinks.toggleClass('open').hasClass('open');
+    $navToggle.toggleClass('open', isOpen);
+    $navToggle.attr('aria-expanded', isOpen);
+  });
+
+  $navLinks.find('a').on('click', function() {
+    $navLinks.removeClass('open');
+    $navToggle.removeClass('open').attr('aria-expanded', false);
+  });
+});
+
+// Scroll-reveal animations
+(function() {
+  const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  const targets = document.querySelectorAll('[data-reveal], [data-reveal-group]');
+
+  if (reduceMotion || !('IntersectionObserver' in window)) {
+    targets.forEach(function(el) { el.classList.add('is-visible'); });
+    return;
+  }
+
+  const observer = new IntersectionObserver(function(entries) {
+    entries.forEach(function(entry) {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('is-visible');
+        observer.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.15, rootMargin: '0px 0px -60px 0px' });
+
+  targets.forEach(function(el) { observer.observe(el); });
+})();

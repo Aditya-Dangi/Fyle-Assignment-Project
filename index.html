@@ -16,8 +16,23 @@
   <title>Fyle Project</title>
 </head>
 <body>
-  
-  <section class="first-page">
+
+  <nav class="site-nav" id="siteNav">
+    <a href="#top" class="nav-logo">Fyle<span>.</span></a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#services" class="nav-link-item">Services</a></li>
+      <li><a href="#why-us" class="nav-link-item">Why Us</a></li>
+      <li><a href="#projects" class="nav-link-item">Projects</a></li>
+      <li><a href="#growth" class="nav-link-item">Growth</a></li>
+      <li><a href="#testimonials" class="nav-link-item">Testimonials</a></li>
+      <li><button class="nav-cta">CONTACT US</button></li>
+    </ul>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <section class="first-page" id="top">
     <div class="container">
       <div class="left-container">
         <h3>Award Winning</h3>
@@ -57,9 +72,9 @@
   
 
 
-  <section class="second-page">
+  <section class="second-page" id="services">
     <div class="service">
-      <div class="service-heading">
+      <div class="service-heading" data-reveal>
         <div class="service-left">
           <h3>What we do</h3>
           <h1>Services Provide For You</h1>
@@ -197,11 +212,11 @@
 
 
 
-  <section class="container-2">
+  <section class="container-2" id="why-us">
     <div class="container-2-body">
-      <h3>Why Choose Us</h3>
-      <h1>Why We Are Best</h1>
-      <div class="qualities">
+      <h3 data-reveal>Why Choose Us</h3>
+      <h1 data-reveal style="--reveal-delay:0.08s">Why We Are Best</h1>
+      <div class="qualities" data-reveal-group>
         <div class="card">
           <img src="./image/icons/1.png" alt="" class="quality-icon">
           <h5>Clarified Vision & Target</h5>
@@ -225,11 +240,11 @@
       </div>
     </div>
   </section>
-  
-  <section class="container-3">
-    <h3>Our Project</h3>
-    <h1>Why we are best</h1>  
-    <div class="container-3-body">
+
+  <section class="container-3" id="projects">
+    <h3 data-reveal>Our Project</h3>
+    <h1 data-reveal style="--reveal-delay:0.08s">Why we are best</h1>
+    <div class="container-3-body" data-reveal style="--reveal-delay:0.16s">
       <div class="container-3-left">
         <img src="./image/image2.jpg" alt="Image Template 1" class="template-img" >
         <img src="./image/image.png" alt="Image Template 2" class="template-img template-img-1">
@@ -251,13 +266,13 @@
       </div>
     </div>
   </section>
-  
 
-  <section class="container-4">
+
+  <section class="container-4" id="growth">
     <div class="container-4-body">
-      <h3>Experts Growth</h3>
-      <h1>Our company growth</h1>
-      <div class="review">
+      <h3 data-reveal>Experts Growth</h3>
+      <h1 data-reveal style="--reveal-delay:0.08s">Our company growth</h1>
+      <div class="review" data-reveal-group>
         <div class="review-card">
           <img src="./icons/heart (2).png" alt="Icon Image" class="review-icons">
           <p class="icons-count">199 +</p>
@@ -282,16 +297,16 @@
     </div>
   </section>
 
-  <section class="container-5">
+  <section class="container-5" id="testimonials">
     <div class="container-5-body">
-      <h3>client's feedback</h3>
-      <h1>people say's about us !</h1>
-      <div>
+      <h3 data-reveal>client's feedback</h3>
+      <h1 data-reveal style="--reveal-delay:0.08s">people say's about us !</h1>
+      <div data-reveal style="--reveal-delay:0.16s">
         <p>Jannat Tumpa The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections Bonorum et Malorum original.</p>
         <span><img src="./image/Quotemarks-left.png" alt="Watermark Icon" class="watermark-icon"></span>
         <span class="span1">JANNAT TUMPA</span>
         <span class="span2">- COO, AMERIMAR ENTERPRISES, INC.</span>
-      </div>      
+      </div>
     </div>
   </section>
 
